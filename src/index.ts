@@ -35,6 +35,7 @@ const main = async (): Promise<void> => {
 
   // Swagger
   const specs = swaggerJSDoc(swaggerOptions);
+  console.log(specs)
   server.use(
     "/api-docs",
     swaggerUiExpress.serve,

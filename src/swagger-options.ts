@@ -25,6 +25,7 @@ export const swaggerOptions: SwaggerOptions = {
   },
   apis: [
     "./src/models/*/*.ts",
-    "./routes/*.ts"
+    // eslint-disable-next-line @typescript-eslint/comma-dangle
+    "./src/routes/*/*.routes.ts",
   ]
 };
