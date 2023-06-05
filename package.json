@@ -10,6 +10,7 @@
     "start:pro": "npm run build && node ./dist/index.js",
     "start:debugts": "ts-node-dev --inspect -- ./src/index.ts",
     "build": "tsc",
+    "build:swagger-json": "ts-node-dev ./src/utils/generate-swagger-json.ts --ingore-watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "seed:player": "ts-node-dev ./src/seeds/Player.seed.ts --ignore-watch",
